@@ -20,8 +20,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 public class DriverLoginActivity extends AppCompatActivity {
-    private EditText nEmail, nPassword;
-    private Button nLogin,nRegister;
+    private EditText nEmail, nPassword,nphone;
+    private Button nLogin,nRegister,nsavephone;
    private FirebaseAuth nAuth;
     private FirebaseAuth.AuthStateListener firebaseAuthListener;
 
@@ -31,6 +31,7 @@ public class DriverLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_driver_login);
+
         nAuth=FirebaseAuth.getInstance();
         firebaseAuthListener=new FirebaseAuth.AuthStateListener() {
             @Override
@@ -51,6 +52,8 @@ public class DriverLoginActivity extends AppCompatActivity {
 
         nEmail = (EditText) findViewById(R.id.email);
         nPassword = (EditText) findViewById(R.id.Password);
+        nphone=(EditText)findViewById(R.id.Phoneno);
+        nsavephone=(Button)findViewById(R.id.Phone) ;
 
         nLogin = (Button) findViewById(R.id.Login);
         nRegister = (Button) findViewById(R.id.Register);

@@ -18,6 +18,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password" />
+    <EditText
+        android:id="@+id/Phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number" />
+
+
+
 
     <Button
         android:id="@+id/Login"
@@ -30,6 +38,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register" />
+   <Button
+    android:id="@+id/Phone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=" add phonenumber " />
+
 
 
 
